@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: -moz-linear-gradient(left, #003087 0%, #7cc6f2 50%, #003087 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #003087 0%,
+    #7cc6f2 50%,
+    #003087 100%
+  );
+  background: linear-gradient(to right, #003087 0%, #7cc6f2 50%, #003087 100%);
+}
+
+.container {
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.dipping-oreo {
+  position: absolute;
+  animation-name: dunk;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes dunk {
+  0% {
+    top: 10em;
+  }
+  30% {
+    top: 10em;
+  }
+  40% {
+    top: 25em;
+  }
+  50% {
+    top: 15em;
+  }
+  60% {
+    top: 25em;
+  }
+  85% {
+    top: 10em;
+  }
+  100% {
+    top: 10em;
+  }
+}
+
+.cookie {
+  background: #272425;
+  outline: 5px dotted #272425;
+  outline-offset: -4px;
+  border-radius: 50%;
+  position: absolute;
+  width: 205px;
+  height: 225px;
+  margin: 0 auto;
+  margin-top: 5px;
+  z-index: -2;
+}
+
+.cookie2 {
+  background: #272425;
+  border: 14px solid #443f41;
+  outline: 5px dotted #272425;
+  outline-offset: -4px;
+  border-radius: 50%;
+  position: relative;
+  width: 205px;
+  height: 205px;
+  margin: 0 auto;
+  z-index: -1;
+}
+
+.cream {
+  background: #bbbcbc;
+  width: 200px;
+  height: 220px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: absolute;
+  z-index: -2;
+  -webkit-box-shadow: 1px 1px 23px 2px #191717;
+  box-shadow: 1px 1px 23px 2px #191717;
+}
+
+.pattern {
+  position: relative;
+  width: 5%;
+  padding-bottom: 50%;
+  margin-left: 47.5%;
+  margin-top: 43px;
+}
+
+.pattern div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+.pattern:before,
+.pattern div:before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 20%;
+  background: #443f41;
+  clip-path: polygon(
+    0 0,
+    50% 10%,
+    100% 0,
+    90% 50%,
+    100% 100%,
+    50% 90%,
+    0 100%,
+    10% 50%
+  );
+  margin: 50px;
+  -webkit-transform: rotate(28deg);
+  -ms-transform: rotate(28deg);
+  transform: rotate(28deg);
+}
+
+.x-pattern {
+  position: relative;
+}
+
+.x-pattern div {
+  position: relative;
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.x-pattern:before,
+.x-pattern div:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 20%;
+  background: #272425;
+  clip-path: polygon(
+    5% 0,
+    0 5%,
+    40% 50%,
+    0 95%,
+    5% 100%,
+    50% 55%,
+    95% 100%,
+    100% 95%,
+    60% 50%,
+    100% 5%,
+    95% 0,
+    50% 45%
+  );
+  margin: 50px;
+}
+
+.oreo-logo {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 6px solid #443f41;
+  background: transparent;
+  font-size: 25px;
+  border-radius: 50%;
+  padding: 10px;
+  margin-top: 75px;
+  z-index: -1;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  color: #443f41;
+}
+
+.inside-logo-triangle {
+  clip-path: polygon(48% 0%, 0 30%, 45% 25%, 55% 25%, 100% 30%);
+  width: 30px;
+  height: 30px;
+  background: red;
+  z-index: 100000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.antenna-thing {
+  background: #443f41;
+  height: 45px;
+  width: 50px;
+  clip-path: polygon(
+    45% 45%,
+    55% 45%,
+    55% 55%,
+    90% 55%,
+    90% 65%,
+    55% 65%,
+    55% 75%,
+    100% 75%,
+    100% 85%,
+    55% 85%,
+    55% 100%,
+    45% 100%,
+    45% 85%,
+    0 85%,
+    0 75%,
+    45% 75%,
+    45% 65%,
+    10% 65%,
+    10% 55%,
+    45% 55%
+  );
+  margin-left: 36%;
+  margin-top: -65%;
+  z-index: 1000000;
+  position: relative;
+}
+
+.outer-ring {
+  position: absolute;
+  margin-left: 50%;
+  margin-top: -25%;
+}
+
+.outer-ring div {
+  position: relative;
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+  z-index: 1000000;
+}
+
+.outer-ring:before,
+.outer-ring div:before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 40px;
+  background: #443f41;
+  clip-path: polygon(0 5%, 50% 0, 100% 5%, 100% 15%, 50% 10%, 0 15%);
+  -webkit-transform: rotate(140deg);
+  -ms-transform: rotate(140deg);
+  transform: rotate(140deg);
+  margin: 30px;
+}
+
+.dots {
+  position: absolute;
+  margin-left: 50%;
+  margin-top: -25%;
+}
+
+.dots div {
+  position: relative;
+  -webkit-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  transform: rotate(20deg);
+  z-index: 1000000;
+}
+
+.dots:before,
+.dots div:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #443f41;
+  clip-path: circle(50% at 50% 50%);
+  margin: 56px;
+}
+
+.milk-glass {
+  clip-path: polygon(25% 0, 75% 0, 65% 100%, 35% 100%);
+  height: 500px;
+  width: 700px;
+  border-radius: 30%;
+  border: 5px solid rgba(225, 225, 225, 0.2);
+  backdrop-filter: blur(1px);
+  margin: 0 auto;
+  margin-top: 100px;
+  position: relative;
+}
+
+.milk {
+  clip-path: polygon(25% 0, 75% 0, 65% 100%, 35% 100%);
+  height: 500px;
+  width: 700px;
+  background: #fdfff5;
+  z-index: 1;
+  margin-top: -10px;
+}
+
+.milk-waves {
+  position: relative;
+  width: 100%;
+  min-height: 50px;
+  max-height: 50px;
+  margin-top: 20px;
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+}
+
+.straw {
+  position: absolute;
+  clip-path: polygon(50% 0, 55% 0, 55% 100%, 50% 100%);
+  height: 600px;
+  width: 480px;
+  -webkit-transform: rotate(160deg);
+  -ms-transform: rotate(160deg);
+  transform: rotate(160deg);
+  background-image: repeating-linear-gradient(
+    -40deg,
+    #fff,
+    #fff 30px,
+    red 20px,
+    red 20px,
+    red 50px
+  );
+  border: 8px solid red;
+  display: flex;
+  margin-right: 10%;
+}
